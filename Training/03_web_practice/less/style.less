@@ -1,0 +1,13 @@
+
+.mathResult(@a, @b, @c) {
+  @calcEm: (sqrt(@a) + cos(@b) + max(@a, @b, @c)) / pow(@c, 5);
+}
+
+.math__result {
+  content: '';
+}
+
+.math__result:after {
+  .mathResult(50, 6, 2);
+  content: '@{calcEm}';
+}
