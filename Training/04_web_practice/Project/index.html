@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <title>Импорт данных из CSV файла в таблицу product</title>
+</head>
+<body>
+    <div class="conteiner">
+        <header>
+            <h1 class="header">
+                Импорт данных из CSV файла в таблицу product
+            </h1>
+        </header>
+        <section class="upload_form">
+            <form id="csvF" method="post" action="php/uploudcsv.php" enctype="multipart/form-data">
+                <input id="file" class="file" name="file" type="file" accept=".csv"/>
+                <input id="sendFile" class="sendFile" type="submit" value="Загрузить"/>
+            </form>
+        </section>
+        <section id="info" class="info">
+            <h2>Информация:</h2>
+        </section>
+    </div>
+
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/upload.js"></script>
+</body>
+</html>
