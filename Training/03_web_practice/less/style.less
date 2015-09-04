@@ -1,4 +1,4 @@
-
+/* Math */
 .mathResult(@a, @b, @c) {
   @calcEm: (sqrt(@a) + cos(@b) + max(@a, @b, @c)) / pow(@c, 5);
 }
@@ -10,4 +10,17 @@
 .math__result:after {
   .mathResult(50, 6, 2);
   content: '@{calcEm}';
+}
+
+/* Color */
+@color: #0089d6;
+@color-darken: darken(@color, 25%);
+@color-light: lighten(@color, 25%);
+
+.color__link {
+  text-decoration: none;
+  color: @color-darken;
+  &:hover {
+    color: @color-light;
+  }
 }
