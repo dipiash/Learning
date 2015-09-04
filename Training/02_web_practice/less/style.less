@@ -1,6 +1,6 @@
 /* Main variable */
-@background-btn_default: #e0;
-@background-btn_default--hover: #e8;
+@background-btn_default: #e0e0e0;
+@background-btn_default--hover: #e8e8e8;
 @color-btn_default: #333;
 @color-btn_default--hover: #333;
 
@@ -33,3 +33,49 @@ html, body {
   padding: 0;
 }
 
+.b--float_left {
+  float: left;
+}
+
+.b--clear_both {
+  clear: both;
+}
+
+.btn {
+  width: 120px;
+  text-align: center;
+  margin: 5px;
+}
+
+.btn_default {
+  padding: @padding--standart;
+  background: @background-btn_default;
+  color: @color-btn_default;
+  border-radius: 5px;
+  &:hover {
+    background: @background-btn_default--hover;
+    color: @color-btn_default--hover;
+  }
+}
+
+.btn_info {
+  padding: @padding--standart;
+  background: @background-btn_info;
+  color: @color-btn_info;
+  border-radius: 5px;
+  &:hover {
+    background: @background-btn_info--hover;
+    color: @color-btn_info--hover;
+  }
+}
+
+.btn_secondary {
+  padding: @padding--standart;
+  background: @background-btn_secondary;
+  color: @color-btn_secondary;
+  border-radius: 5px;
+  &:hover {
+    background: @background-btn_secondary--hover;
+    color: @color-btn_secondary--hover;
+  }
+}
