@@ -8,14 +8,14 @@ var gulp = require('gulp'),
     batch = require('gulp-batch');
 
 gulp.task('less', function () {
-  return gulp.src('*.less')
+  return gulp.src('less/*.less')
     .pipe(less({ plugins: [cleancss] }))
     .pipe(csso())
     .pipe(gulp.dest('./css/'));
 });
 
 gulp.task('watch', function () {
-    watch('*.less', batch(function (events, done) {
+    watch('less/*.less', batch(function (events, done) {
         gulp.start('less', done);
     }));
 });
