@@ -1,0 +1,19 @@
+@list-modifier: black, red, purple, green, blue;
+@listColors: #000000, #ff0000, #800080, #008000, #0000ff;
+
+.generate-modifiers(@index-lm, @i: 1) when (@i <= length(@list-modifier)) {
+  @modifier: extract(@list-modifier, @i);
+  .color--@{modifier} {
+    color: extract(@listColors, @i);
+  }
+
+  .generate-modifiers(@index-lm, @i + 1)
+}
+
+.make-modifiers(@index: 1) when (@index <= length(@list-modifier)) {
+  .generate-modifiers(@index);
+
+  .make-modifiers(@index + 1);
+}
+
+.make-modifiers();
