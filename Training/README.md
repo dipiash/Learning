@@ -5,3 +5,4 @@
 4. [Импорт данных из CSV файла](https://github.com/dipiash/Learning/tree/master/Training/04_web_practice)
 5. [Генерация вспомогательных классов в Less](https://github.com/dipiash/Learning/tree/master/Training/05_web_practice)
 6. [Знакомство с gem'ом devise](https://github.com/dipiash/Learning/tree/master/Training/06_web_practice)
+7. [Установка Oracle DB 11g2](https://github.com/dipiash/Learning/tree/master/Training/07_install_oracle_db)
